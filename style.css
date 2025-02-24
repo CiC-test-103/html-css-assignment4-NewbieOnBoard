@@ -48,7 +48,291 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Your CSS Below **/
 
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fs-base);
+  background-color: var(--clr-paleBlue);
+  width: 100%;
+  height: 100%;
+  max-width: 775px;
+  margin: 0 auto;
+}
 
+.mainContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  max-width: 100%;
+  border-radius: 1.1rem;
+  margin: 25% 27.5%;
+  background-color: white;
+  transform: scale(1.8, 1.8);
+}
+
+.stats-card_left{
+  display: flex;
+  text-align: center;
+  max-width: 100%;
+  background-image: linear-gradient(var(--gra-lightSlateBlue), var(--gra-lightRoyalBlue));
+  color: white;
+  border-radius: 1.1rem;
+}
+
+.result{
+  margin: 18px;
+  color: var(--clr-lightLavender);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.circle{
+  width: 55%;
+  max-width: 150px;
+  aspect-ratio: 1/1;
+  background-image: linear-gradient(var(--gra-violetBlue), var(--gra-persianBlue));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: -5px auto;
+  margin-bottom: 10px;
+}
+
+.score{
+  font-size: 40px;
+}
+
+.score-total{
+  color: var(--clr-lightLavender);
+  font-size: 8.5px;
+  opacity: 50%;
+  margin-top: -8px;
+}
+
+.great{
+  font-size: 15px;
+  font-weight: 470;
+  margin-bottom: -3px;
+  margin-top: -2px;
+}
+
+.info{
+  font-weight: normal;
+  color: var(--clr-lightLavender);
+  font-size: 8px;
+  padding: 10px;
+  margin: auto 20px;
+  margin-bottom: 14px;
+}
+
+.stats-card_right{
+  margin: 16px 20px;
+}
+
+.summary{
+  font-size: 11.5px;
+  color: var(--clr-darkGrayBlue);
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 3px;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 8.5px;
+  margin: 8px auto;
+}
+
+.cA{
+  justify-content:space-between;
+  background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.reactionImg{
+  transform: scale(0.5, 0.5);
+}
+
+.reaction{
+  color: hsla(0, 100%, 67%, 0.8);
+  margin-right: 41px;
+}
+
+.cB{
+  justify-content: space-between;
+  background-color: hsla(39, 100%, 56%, 0.07);
+}
+
+.memory{
+  color: hsla(39, 100%, 56%, 0.8);
+  margin-right: 41px;
+}
+
+.cC{
+  justify-content: space-between;
+  background-color: hsl(168, 86%, 30%, 0.07);
+}
+
+.verbal{
+  color: hsla(168, 84%, 36%, 0.8);
+  margin-right: 47px;
+}
+
+.cD{
+  justify-content: space-between;
+  background-color: hsl(249, 85%, 45%, 0.07);
+}
+
+.visual{
+  color: hsl(249, 85%, 45%, 0.8);
+  margin-right: 47px;
+}
+
+span{
+  color: var(--clr-darkGrayBlue);
+  opacity: 50%;
+}
+
+@media (max-width: 425px){
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30% auto;
+  }
+
+  .mainContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    margin: 30% 28%;
+    padding-bottom: 13px;
+    background-color: white;
+    transform: scale(1.6, 1.6);
+  }
+
+  .stats-card_left{
+    order: 1;
+  }
+
+  .stats-card_right{
+    order: 2;
+    margin: 0 10px;
+  }
+
+  .summary{
+    margin: 6px;
+    margin-bottom: 10px;
+  }
+
+  .container{
+    width: 97%;
+  }
+
+  .reaction{
+    margin-right: 54px;
+  }
+
+  .memory{
+    margin-right: 54px;
+  }
+
+  .verbal{
+    margin-right: 60px;
+  }
+
+  .visual{
+    margin-right: 60px;
+  }
+
+  .attribution{
+    margin-top: 10%;
+  }
+}
+
+@media (max-width: 375px){
+  body{
+    margin: 10% auto;
+  }
+
+  .mainContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 1.1rem;
+    align-items: center;
+    justify-content: center;
+    margin:45% 22%;
+    padding-bottom: 13px;
+    background-color: white;
+    transform: scale(1.6, 1.6);
+  }
+
+  .stats-card_left{
+    order: 1;
+  }
+
+  .stats-card_right{
+    order: 2;
+    margin: 0 10px;
+  }
+
+  .summary{
+    margin: 6px;
+    margin-bottom: 10px;
+  }
+
+  .container{
+    width: 97%;
+  }
+
+  .reaction{
+    margin-right: 54px;
+  }
+
+  .memory{
+    margin-right: 54px;
+  }
+
+  .verbal{
+    margin-right: 60px;
+  }
+
+  .visual{
+    margin-right: 60px;
+  }
+
+  .attribution{
+    margin-top: 10%;
+  }
+}
+
+.button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-darkGrayBlue);
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100%;
+  margin-top: 18px;
+  font-size: 8px;
+  font-weight: 500;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover{
+  background-image: linear-gradient(var(--gra-lightSlateBlue), var(--gra-lightRoyalBlue));
+}
 
 
 /** Attribution CSS **/
